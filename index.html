@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Damiano Dionori - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <span class="logo">Damiano Dionori</span>
+      <div class="nav-links">
+        <a href="#projects">Progetti</a>
+        <a href="#skills">Competenze</a>
+        <a href="#contact">Contatti</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="profile-image">
+        <img src="images/fotoprofilo.png" alt="Foto profilo Damiano Dionori">
+      </div>
+      <h1>Ciao, sono Damiano Dionori</h1>
+      <h2>Sviluppatore Web Full Stack & Appassionato di Tecnologia</h2>
+      <p>Realizzo soluzioni digitali moderne, performanti e su misura per aziende e professionisti. Scopri i miei progetti e le mie competenze!</p>
+      <div class="cta-buttons">
+        <a href="#projects" class="btn btn-primary">I Miei Progetti</a>
+        <a href="#contact" class="btn btn-secondary">Contattami</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>I Miei Progetti</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/collezionenumismatica.png" alt="E-commerce Platform">
+          </div>
+          <h3>Collezione di Numismatica</h3>
+          <p>Una piattaforma per catalogare monete e banconote e filtri di ricerca.</p>
+          <div class="project-tags">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>Stripe</span>
+          </div>
+          <a href="https://example.com/project1" class="btn btn-primary" target="_blank">Visita il Progetto</a>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/darioeserena.png" alt="Social Media Dashboard">
+          </div>
+          <h3>Sito per Matrimonio.</h3>
+          <p>Tutte le informazioni di un matrimonio e link utili agli invitati.</p>
+          <div class="project-tags">
+            <span>Vue.js</span>
+            <span>Firebase</span>
+            <span>Chart.js</span>
+          </div>
+          <a href="https://example.com/project2" class="btn btn-primary" target="_blank">Visita il Progetto</a>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/dariogiardinaggio.png" alt="Task Management App">
+          </div>
+          <h3>Sito aziendale.</h3>
+          <p>Sito aziendale di una ditta di giardinaggio e servizi offerti.</p>
+          <div class="project-tags">
+            <span>React</span>
+            <span>Redux</span>
+            <span>Socket.io</span>
+            <span>Express</span>
+          </div>
+          <a href="https://example.com/project3" class="btn btn-primary" target="_blank">Visita il Progetto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Le Mie Competenze</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-react"></i>
+          <h3>React & Next.js</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%"></div>
+          </div>
+          <p>Sviluppo di applicazioni web moderne e performanti con React e Next.js.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-node-js"></i>
+          <h3>Node.js</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 85%"></div>
+          </div>
+          <p>Creazione di API RESTful e applicazioni backend con Node.js.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database"></i>
+          <h3>Database</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%"></div>
+          </div>
+          <p>Gestione di database SQL e NoSQL come MongoDB e PostgreSQL.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-git-alt"></i>
+          <h3>Git & DevOps</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 85%"></div>
+          </div>
+          <p>Gestione del versionamento e deployment continuo con Git e strumenti DevOps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contattami</h2>
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Messaggio</label>
+            <textarea id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Invia Messaggio</button>
+        </form>
+        <div id="successMessage" class="success-message">
+          <p>Messaggio inviato!</p>
+          <p>Grazie per avermi contattato. Ti risponderò il prima possibile.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
